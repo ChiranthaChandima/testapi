@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-MODEL = tf.keras.models.load_model('../saved_models/1')
+MODEL = tf.keras.models.load_model('saved_models/1')
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
 
